@@ -2,7 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Nueva from './componentes/Nueva/Nueva'
+
+import { Inicio } from './componentes/Inicio/Inicio'
+import { Main } from './componentes/Main/Main'
+
 
 
 
@@ -11,7 +14,8 @@ import Nueva from './componentes/Nueva/Nueva'
 function App() {
   return(
   <>
-<Nueva></Nueva>
+  <Inicio></Inicio>
+    <Main></Main>
   </>
   )
 }

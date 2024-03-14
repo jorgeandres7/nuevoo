@@ -1,0 +1,10 @@
+.td{
+    display: flex;
+    justify-content: space-around;
+}
+.uno{
+    display: flex;
+}
+.dos{
+    display: flex;
+}
