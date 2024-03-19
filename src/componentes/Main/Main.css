@@ -1,10 +1,29 @@
 .td{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .uno{
     display: flex;
+    height: 69px;
+    align-items: center;
 }
 .dos{
     display: flex;
+
+    height: 69px;
+    align-items: center;
+}
+.uno input{
+    
+    background-color: white;
+}
+.dos input{
+    background-color: white;
+}
+.boto{
+    height:40px ;
+    border-radius:10px ;
+    background-color: white;
+    color: bñ;
 }

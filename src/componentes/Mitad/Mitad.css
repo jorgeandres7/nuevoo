@@ -1,0 +1,11 @@
+.amarillo{
+color: yellow;
+}
+.separar{
+    display: flex;
+    /* margin-right: 675px; */
+    
+    position: relative;
+    left: 116px;
+    align-items:center ;
+}
