@@ -15,15 +15,16 @@
     align-items: center;
 }
 .uno input{
-    
+    color: black;
     background-color: white;
 }
 .dos input{
+    color: black;
     background-color: white;
 }
 .boto{
     height:40px ;
     border-radius:10px ;
     background-color: white;
-    color: bñ;
+    color: black;
 }

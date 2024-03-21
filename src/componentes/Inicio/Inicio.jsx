@@ -8,7 +8,5 @@ export const Inicio = () => {
        <h1>Lista de Tareas</h1>
       <div className='logo'><Logo content={image}></Logo></div>
    </header>
-   
-   
   )
 }
