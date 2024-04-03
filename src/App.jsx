@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Home } from './componentes/Pages/Home/Home'
+import { Mitad } from './componentes/Mitad/Mitad'
+import { Main } from './componentes/Layouts/Main/Main'
 
 
 
@@ -10,17 +12,17 @@ import { Home } from './componentes/Pages/Home/Home'
 
 
 
-function App() {
-  return(
-  <>
-<<<<<<< HEAD
-  <Inicio></Inicio>
+
+
+export const App = () => {
+  return (
+    <>
+   
     <Mitad></Mitad>
-    
-=======
- <Home></Home>
->>>>>>> 8c2cd2338d9c3605205cceadde65480d2da19871
-  </>
+    <Main></Main>
+    </>
   )
 }
+
+
 export default App

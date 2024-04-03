@@ -1,0 +1,21 @@
+.circulo{
+    border-radius: 50px;
+    width: 44px;
+    background-color: red;
+    height: 40px;
+    margin: 5px;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box {
+    transform: scale(2); /* Aumenta el tamaño del checkbox al doble */
+  }
+
+  
+  .verde {
+    background-color: green;
+  }
+  

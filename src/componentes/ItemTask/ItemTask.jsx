@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
+import "./ItemTask.css";
 
-<<<<<<< HEAD
-export const ItemTask = ({children}) => {
+export const ItemTask = ({ children }) => {
+  const [isChecked, setIsChecked] = useState(false); // Estado para el estado del checkbox
+
+  const cambiarColor = () => {
+    setIsChecked(!isChecked); // Cambia el estado del checkbox al contrario del estado actual
+  };
+
   return (
     <li>
-        {children}
-=======
-export const ItemTask = ({idTask,content,tittleTask}) => {
-  return (
-    <li id={idTask }>
-        <div></div>
-        <h2>{tittleTask}</h2>
-        <p>{content}</p>
->>>>>>> 8c2cd2338d9c3605205cceadde65480d2da19871
+      <div className={isChecked ? 'circulo verde' : 'circulo'}></div>
+      {children}
+      <input className='box' type="checkbox" checked={isChecked} onChange={cambiarColor} />
     </li>
-  )
-}
+  );
+};
