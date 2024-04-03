@@ -1,14 +1,41 @@
-.amarillo{
-color: yellow;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.separar{
+.amarillo {
+    color: yellow;
     display: flex;
-    /* margin-right: 675px; */
-    
-    position: relative;
-    left: 116px;
-    align-items:center ;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .separar {
+    display: flex;
+    align-items: center;
+    margin-left: 116px; /* Ajustado el margen izquierdo en lugar del derecho */
+  }
+  
+  .sep {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente el texto */
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .circle-red {
+    background-color: red;
+  }
+  
+  .circle-green {
+    background-color: green;
+  }
+  
+  
+  
+  
+
+  
+  

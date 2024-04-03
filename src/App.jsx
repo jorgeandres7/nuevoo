@@ -15,8 +15,8 @@ function App() {
   return(
   <>
   <Inicio></Inicio>
-    <Main></Main>
     <Mitad></Mitad>
+    
   </>
   )
 }
