@@ -10,10 +10,16 @@ export const Mitad = () => {
 
   const agregarTarea = () => {
     // Agregar la nueva tarea al estado de tareas
-    setTareas([...tareas, { titulo: tituloTarea, descripcion: descripcionTarea }]);
+    setTareas([...tareas, { titulo: tituloTarea, descripcion: descripcionTarea, completada: false }]);
     // Limpiar los campos de entrada después de agregar la tarea
     setTituloTarea('');
     setDescripcionTarea('');
+  };
+
+  const Completada = (index) => {
+    const nuevasTareas = [...tareas];
+    nuevasTareas[index].completada = !nuevasTareas[index].completada;
+    setTareas(nuevasTareas);
   };
 
   return (
@@ -25,7 +31,7 @@ export const Mitad = () => {
           <button className='boto' onClick={agregarTarea}>crear</button>
         </div>
       </main>
-      <h2 className='amarillo'>Usted tiene {tareas.length} tareas pendientes</h2>
+      <h2 className='amarillo'>Usted tiene {tareas.filter(tarea => !tarea.completada).length} tareas pendientes y {tareas.filter(tarea => tarea.completada).length} tareas completadas</h2>
       <div>
         <hr /> 
         <div className='separar'>
@@ -39,10 +45,12 @@ export const Mitad = () => {
       </div>
       <Task>
         {tareas.map((tarea, index) => (
-          <ItemTask key={index}>{tarea.titulo} - {tarea.descripcion}</ItemTask>
+          <ItemTask key={index} className={tarea.completada ? 'verde' : 'rojo'}>
+            <span>{tarea.titulo} - {tarea.descripcion}</span>
+            <input className='box' type="checkbox" checked={tarea.completada} onChange={() =>  Completada(index)} />
+          </ItemTask>
         ))}
       </Task>
     </>
   );
 };
-    
